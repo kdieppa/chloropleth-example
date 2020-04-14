@@ -34,6 +34,8 @@
 <div id='map'></div>
 
 <script type="text/javascript" src="us-states.js"></script>
+<script type="text/javascript" src="selected_counties.js"></script>
+
 
 <script type="text/javascript">
 
@@ -127,7 +129,7 @@
 		});
 	}
 
-	geojson = L.geoJson(statesData, {
+	geojson = L.geoJson(selectedCounties, {
 		style: style,
 		onEachFeature: onEachFeature
 	}).addTo(map);
